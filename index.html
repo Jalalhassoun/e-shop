@@ -13,15 +13,59 @@
   <div id="app" class="e-wrapper">
     <div class="e-inner">
       <header class="e-header h-20 px-12  flex justify-between items-center border-b">
-        <a href="/" class="e-logo flex items-center space-x-1"><img
+        <a href="/" class="e-logo flex items-center"><img
             src="./icons/image-removebg-preview(52)-5rB8KdZqR6-transformed 1.svg" alt="logo">
           <p class="capitalize font-semibold text-fuchsia-400">shop</p>
         </a>
-        <div class="e-search-bar">searchbar</div>
-        <div class="e-actions">actions</div>
+        <div class="e-search-bar border rounded-full h-10 flex items-center overflow-hidden p-1">
+          <button class="h-full flex items-center space-x-4 px-2 border-r">
+            <img src="icons/map-pin 1.svg" alt="icon">
+            <span class="capitalize font-semibold text-stone-500">new york</span>
+            <img src="icons/chevron-down(1) 1.svg" alt="icon">
+
+          </button>
+          <input type="text"
+            class="h-full w-96 pl-4 focus:outline-none placeholder:font-semibold placeholder:text-stone-600 placeholder:capitalize"
+            placeholder="asus">
+          <button class="h-full rounded-full flex items-center space-x-4 bg-fuchsia-600 text-white px-4 ">
+            <img src="icons/search(2) 1.svg" alt="icon">
+            <span class="capitalize text-sm font-medium">search</span></button>
+        </div>
+        <div class="e-actions flex items-center space-x-6">
+          <button class="flex items-center space-x-2 -mr-2">
+            <img src="images/Ellipse 1.svg" alt="american flag">
+            <span class="uppercase font-medium text-stone-300">en </span>
+            <img src="icons/chevron-down(1) 1.svg" class="object-cover" alt="down icon">
+          </button>
+          <div class="flex items-center space-x-4 border-r h-10 pr-6">
+            <button><img src="icons/shopping-cart 1.svg" alt="cart icon"></button>
+            <button><img src="icons/bell(1) 1.svg" alt="bell icon"></button>
+            <button><img src="icons/mail 1.svg" alt="mail icon"></button>
+          </div>
+          <button class="h-8 w-8 rounded-full focus:outline-none"><img src="images/Ellipse 2.png"
+              class="h-full w-full object-cover" alt="photo"></button>
+        </div>
 
       </header>
-      <section class="e-filter h-20 border-b items-center flex px-12">filter</section>
+      <section class="e-filter h-20 border-b items-center flex px-12 space-x-7">
+        <button class="flex items-center pr-4 space-x-2 border-r border-stone-500">
+          <img src="icons/list(1) 1.svg" alt="list icon">
+          <span class="capitalize font-semibold text-gray-500">categories</span>
+          <img src="./public/icons/chevron-down(1) 1.svg" alt="down icon">
+        </button>
+        <button class="capitalize font-medium text-gray-500 text-sm">ready to ship</button>
+        <button class="capitalize font-medium text-gray-500 text-sm">personal protective</button>
+        <button class="capitalize flex items-center space-x-2 font-medium text-gray-500 text-sm">
+          <span>buyer central</span>
+          <img src="icons/chevron-down(1) 1.svg" alt="list icon">
+        </button>
+        <button class="capitalize font-medium flex items-center space-x-2  text-gray-500 text-sm">
+          <span>sell on shop.com</span>
+          <img src="icons/chevron-down(1) 1.svg" alt="list icon"></button>
+        <button class="capitalize font-medium flex items-center space-x-2  text-gray-500 text-sm"> <span>help</span>
+          <img src="icons/chevron-down(1) 1.svg" alt="list icon"></button>
+
+      </section>
       <main class="e-content flex px-12 ">
         <aside class="e-side w-56 h-screen bg-blue-500">aside</aside>
         <div class="e-content bg-indigo-500 flex-1">content</div>
