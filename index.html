@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app" class="e-wrapper">
+    <div class="e-inner">
+      <header class="e-header h-20 flex justify-between items-center border-b px-4 xl:px-12">
+        <a href="/" class="e-logo flex items-center"><img
+            src="icons/image-removebg-preview(52)-5rB8KdZqR6-transformed 1.svg" alt="logo">
+          <p class="capitalize font-semibold text-primary">shop</p>
+        </a>
+        <div class="e-search-bar border rounded-full h-10  items-center overflow-hidden p-1 hidden lg:flex">
+          <button class="h-full flex items-center space-x-4 px-2 border-r">
+            <img src="icons/map-pin 1.svg" alt="icon">
+            <span class="capitalize font-semibold text-stone-500">new york</span>
+            <img src="icons/chevron-down(1) 1.svg" alt="icon">
+
+          </button>
+          <input type="text"
+            class="h-full w-96 pl-4 focus:outline-none placeholder:font-semibold placeholder:text-stone-600 placeholder:capitalize"
+            placeholder="asus">
+          <button class="h-full rounded-full flex items-center space-x-4 bg-primary text-white px-4 ">
+            <img src="icons/search(2) 1.svg" alt="icon">
+            <span class="capitalize text-sm font-medium">search</span></button>
+        </div>
+        <div class="e-actions hidden items-center space-x-6 lg:flex">
+          <button class="flex items-center space-x-2 -mr-2">
+            <img src="images/Ellipse 1.svg" alt="american flag">
+            <span class="uppercase font-medium text-line-pro">en </span>
+            <img src="icons/chevron-down(1) 1.svg" class="object-cover" alt="down icon">
+          </button>
+          <div class="flex items-center space-x-4 border-r h-10 pr-6">
+            <button><img src="icons/shopping-cart 1.svg" alt="cart icon"></button>
+            <button><img src="icons/bell(1) 1.svg" alt="bell icon"></button>
+            <button><img src="icons/mail 1.svg" alt="mail icon"></button>
+          </div>
+          <button class="h-8 w-8 rounded-full focus:outline-none"><img src="images/Ellipse 2.png"
+              class="h-full w-full object-cover" alt="photo"></button>
+        </div>
+        <button class="block lg:hidden">menu</button>
+
+      </header>
+      <section class="e-filter h-20 border-b items-center flex px-12 space-x-7">
+        <button class="flex items-center pr-4 space-x-2 border-r border-stone-500">
+          <img src="icons/list(1) 1.svg" alt="list icon">
+          <span class="capitalize font-semibold text-gray-500">categories</span>
+          <img src="./public/icons/chevron-down(1) 1.svg" alt="down icon">
+        </button>
+        <button class="capitalize font-medium text-gray-500 text-sm">ready to ship</button>
+        <button class="capitalize font-medium text-gray-500 text-sm">personal protective</button>
+        <button class="capitalize flex items-center space-x-2 font-medium text-gray-500 text-sm">
+          <span>buyer central</span>
+          <img src="icons/chevron-down(1) 1.svg" alt="list icon">
+        </button>
+        <button class="capitalize font-medium flex items-center space-x-2  text-gray-500 text-sm">
+          <span>sell on shop.com</span>
+          <img src="icons/chevron-down(1) 1.svg" alt="list icon"></button>
+        <button class="capitalize font-medium flex items-center space-x-2  text-gray-500 text-sm"> <span>help</span>
+          <img src="icons/chevron-down(1) 1.svg" alt="list icon"></button>
+
+      </section>
+      <main class="e-content flex px-12 py-6 gap-x-6">
+        <aside class="e-side w-72 h-screen border rounded-lg p-6 flex flex-col space-y-6">
+          <h5 class="text-lg capitalize font-semibold">filter</h5>
+          <div class="flex flex-col gap-y-4">
+            <div class="flex flex-col gap-y-2">
+              <p class="capitalize font-semibold text-gray-900 text-sm">suppliers types</p>
+              <div class="flex flex-col space-y-2">
+                <label for="trade" class="flex items-center space-x-2">
+                  <input type="checkbox" id="trade" class="w-4 h-4 border-gray-500">
+                  <img src="images/image 1.png" alt="IMAGE1">
+                  <span class="capitalize font-medium text-grey text-xs">trade assurance</span>
+                </label>
+                <label for="verify" class="flex items-center space-x-2">
+                  <input type="checkbox" id="verify" class="w-4 h-4 border-gray-500">
+                  <img src="images/image-removebg-preview(53) 1.png" alt="IMAGE1">
+                  <span class="capitalize font-medium text-grey text-xs">verified suppliers</span>
+                </label>
+              </div>
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <p class="capitalize font-semibold text-gray-900 text-sm">suppliers types</p>
+              <div class="flex flex-col space-y-2">
+                <label for="ready" class="flex items-center space-x-2">
+                  <input type="checkbox" id="ready" class="w-4 h-4 border-gray-500" checked>
+                  <span class="capitalize font-medium text-grey text-xs">ready to ship</span>
+                </label>
+                <label for="paid" class="flex items-center space-x-2">
+                  <input type="checkbox" id="paid" class="w-4 h-4 border-gray-500 " checked>
+                  <span class="capitalize font-medium text-grey text-xs">paid samples</span>
+                </label>
+              </div>
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <p class="capitalize font-semibold text-gray-900 text-sm">suppliers types</p>
+              <div class="flex flex-col space-y-2">
+                <label for="new" class="flex items-center space-x-2">
+                  <input type="checkbox" id="new" class="w-4 h-4 border-gray-500">
+                  <span class="capitalize font-medium text-grey text-xs">new stuff</span>
+                </label>
+                <label for="second" class="flex items-center space-x-2">
+                  <input type="checkbox" id="second" class="w-4 h-4 border-gray-500 ">
+                  <span class="capitalize font-medium text-grey text-xs">second hand</span>
+                </label>
+              </div>
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <p class="capitalize font-semibold text-gray-900 text-sm">min order</p>
+              <label for="range">
+                <input type="range" name="range" id="range" max="1000" value="100" class="w-full focus:outline-none ">
+              </label>
+            </div>
+            <div class="flex flex-col gap-y-2">
+              <p class="capitalize font-semibold text-gray-900 text-sm">price</p>
+              <div class="flex flex-col gap-y-2">
+                <label class="flex h-8 items-center rounded-md overflow-hidden ">
+                  <button class="w-14 h-full bg-line-pro flex flex-col items-center justify-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 10.8181 20.7672 9.64778 20.3149 8.55585C19.8626 7.46392 19.1997 6.47177 18.364 5.63604C17.5282 4.80031 16.5361 4.13738 15.4442 3.68508C14.3522 3.23279 13.1819 3 12 3C10.8181 3 9.64778 3.23279 8.55585 3.68508C7.46392 4.13738 6.47177 4.80031 5.63604 5.63604C4.80031 6.47177 4.13738 7.46392 3.68508 8.55585C3.23279 9.64778 3 10.8181 3 12Z"
+                        stroke="#4E4545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M14.8 9C14.6188 8.68576 14.3557 8.4267 14.0386 8.25055C13.7215 8.0744 13.3625 7.9878 13 8H11C10.4696 8 9.96086 8.21071 9.58579 8.58579C9.21071 8.96086 9 9.46957 9 10C9 10.5304 9.21071 11.0391 9.58579 11.4142C9.96086 11.7893 10.4696 12 11 12H13C13.5304 12 14.0391 12.2107 14.4142 12.5858C14.7893 12.9609 15 13.4696 15 14C15 14.5304 14.7893 15.0391 14.4142 15.4142C14.0391 15.7893 13.5304 16 13 16H11C10.6375 16.0122 10.2785 15.9256 9.96142 15.7494C9.64435 15.5733 9.38115 15.3142 9.2 15M12 7V17"
+                        stroke="#4E4545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </button>
+                  <input type="text"
+                    class="h-full w-40 border rounded-r-md focus:outline-none placeholder:text-gray-950 "
+                    placeholder="100">
+                </label>
+                <label><input type="text"></label>
+                <label><input type="text"></label>
+                <label><input type="text"></label>
+                <label><input type="text"></label>
+              </div>
+            </div>
+        </aside>
+        <div class="e-content bg-indigo-500 flex-1">content</div>
+      </main>
+    </div>
+
+  </div>
+  <!-- <script type="module" src="/main.js"></script> -->
+</body>
+
+</html>
